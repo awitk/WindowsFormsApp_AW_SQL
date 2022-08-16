@@ -52,6 +52,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaWynikowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaWynikowForm.Designer.cs">
+      <DependentUpon>ListaWynikowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models2\Wynik.cs" />
+    <Compile Include="Models\Osoba.cs" />
+    <Compile Include="Models\tabela_Dystans.cs" />
+    <Compile Include="Models\tabela_Edycja_Zawodow.cs" />
+    <Compile Include="Models\tabela_Kategoria.cs" />
+    <Compile Include="Models\tabela_Klub_Kolarski.cs" />
+    <Compile Include="Models\Tabela_Komentarz.cs" />
+    <Compile Include="Models\tabela_Plec.cs" />
+    <Compile Include="Models\tabela_Wyniki.cs" />
+    <Compile Include="Models\Tabela_Zawodnik.cs" />
     <Compile Include="MTB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -59,8 +75,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PrzykladowyFormularz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrzykladowyFormularz.Designer.cs">
+      <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ListaWynikowForm.resx">
+      <DependentUpon>ListaWynikowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,7 +92,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PrzykladowyFormularz.resx">
+      <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="MTB.xsc">
       <DependentUpon>MTB.xsd</DependentUpon>
     </None>
@@ -94,6 +120,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rower1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mtb-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mtb-photo2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
