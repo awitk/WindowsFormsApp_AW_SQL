@@ -36,15 +36,13 @@ namespace WindowsFormsApp_AW_SQL
             this.button4_klub = new System.Windows.Forms.Button();
             this.button5_wyniki_1edycja = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1_wszystkie_wyniki
             // 
             this.button1_wszystkie_wyniki.Location = new System.Drawing.Point(26, 251);
-            this.button1_wszystkie_wyniki.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1_wszystkie_wyniki.Margin = new System.Windows.Forms.Padding(2);
             this.button1_wszystkie_wyniki.Name = "button1_wszystkie_wyniki";
             this.button1_wszystkie_wyniki.Size = new System.Drawing.Size(161, 25);
             this.button1_wszystkie_wyniki.TabIndex = 0;
@@ -91,6 +89,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button4_klub.TabIndex = 4;
             this.button4_klub.Text = "Zobacz wyniki klubu";
             this.button4_klub.UseVisualStyleBackColor = true;
+            this.button4_klub.Click += new System.EventHandler(this.button4_klub_Click);
             // 
             // button5_wyniki_1edycja
             // 
@@ -112,29 +111,11 @@ namespace WindowsFormsApp_AW_SQL
             this.button6.Text = "Zobacz wyniki wybranej kategorii w ramach jednej edycji zawodów";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(78, 422);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(77, 396);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 20);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "wybierz nazwę klubu kolarskiego z listy";
-            // 
             // PrzykladowyFormularz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 505);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5_wyniki_1edycja);
             this.Controls.Add(this.button4_klub);
@@ -142,12 +123,12 @@ namespace WindowsFormsApp_AW_SQL
             this.Controls.Add(this.button2_komentarz);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1_wszystkie_wyniki);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PrzykladowyFormularz";
             this.Text = "PrzykladowyFormularz";
+            this.Load += new System.EventHandler(this.PrzykladowyFormularz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -160,7 +141,5 @@ namespace WindowsFormsApp_AW_SQL
         private System.Windows.Forms.Button button4_klub;
         private System.Windows.Forms.Button button5_wyniki_1edycja;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

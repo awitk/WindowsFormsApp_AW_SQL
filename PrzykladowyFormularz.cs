@@ -52,5 +52,26 @@ namespace WindowsFormsApp_AW_SQL
         {
 
         }
+
+        private void button4_klub_Click(object sender, EventArgs e)
+        {
+            var okno = new Wyniki_Klubu();
+            // stworzenie okno
+
+            okno.ShowDialog();
+
+            
+            //// MIEJSCE KODU 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PrzykladowyFormularz_Load(object sender, EventArgs e)
+        {
+            // kod z lista klubu
+        }
     }
 }

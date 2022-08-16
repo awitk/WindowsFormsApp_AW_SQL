@@ -81,6 +81,12 @@
     <Compile Include="PrzykladowyFormularz.Designer.cs">
       <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wyniki_Klubu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wyniki_Klubu.Designer.cs">
+      <DependentUpon>Wyniki_Klubu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ListaWynikowForm.resx">
       <DependentUpon>ListaWynikowForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="PrzykladowyFormularz.resx">
       <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wyniki_Klubu.resx">
+      <DependentUpon>Wyniki_Klubu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="MTB.xsc">
       <DependentUpon>MTB.xsd</DependentUpon>
