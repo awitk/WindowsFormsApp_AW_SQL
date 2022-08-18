@@ -22,30 +22,34 @@ namespace WindowsFormsApp_AW_SQL
                     con.Open();
                     var cmd = new SqlCommand();
                     cmd.Connection = con;
-                    cmd.CommandText = "select w.wynik_id,z.Imie, z.Nazwisko, w.Punkty, w.Czy_Nagroda, k.Kategoria_Nazwa from WYNIKI w join ZAWODNICY z on w.ZAWODNIK_ID = z.ZAWODNIK_ID join KATEGORIA k on w.Kategoria_ID = k.Kategoria_ID";
+                cmd.CommandText = "select Imie, Nazwisko, Plec_nazwa, Kategoria_Nazwa, Klub_Nazwa, Srednia_predkosc, Czas, Punkty, Miejscowosc, e.Data FROM WYNIKI as w JOIN ZAWODNICY as z on w.ZAWODNIK_ID = z.ZAWODNIK_ID JOIN KATEGORIA as kat on w.kategoria_id = kat.kategoria_id JOIN EDYCJA_ZAWODOW as e on e.edycja_id = w.edycja_zawodow_id JOIN KLUB_KOLARSKI as klub on klub.klub_ID = z.Klub_Kolarski_Klub_id JOIN PLEC as p on p.id = Z.Plec_id order by Punkty DESC";
                     System.Console.WriteLine(1);
-                    //cmd.CommandText = "select * from WYNIKI";
+                  // cmd.CommandText = "select * from WYNIKI";
                     var reader = cmd.ExecuteReader();
 
                     System.Console.WriteLine(2);
-                    var list = new List<Wynik>();
+                    var list = new List<Wynik_F1>();
                     while (reader.Read())
                     {
                         System.Console.WriteLine(reader.ToString()); 
                         System.Console.WriteLine(3);
-                        var w = new Wynik
+                        var w = new Wynik_F1
                         
                         {
-                         
-                           Imie = reader["Imie"].ToString(),
-                           Nazwisko = reader["Nazwisko"].ToString(),
-                           Punkty = (int)reader["Punkty"],
-                          // CzyNagroda = (int)reader["Czy_Nagroda"], czas to null
-                           Kategoria = reader["Kategoria_Nazwa"].ToString()
-                        };
+                          Imie = reader["Imie"].ToString(),
+                          Nazwisko = reader["Nazwisko"].ToString(),
+                          Plec = reader["Plec_nazwa"].ToString(),
+                          Kategoria = reader["Kategoria_Nazwa"].ToString(),
+                          Klub_Kolarski = reader["Klub_Nazwa"].ToString(),
+                          Srednia_Predkosc = (int)reader["Srednia_Predkosc"],
+                          Czas = reader["Czas"].ToString(),
+                          Punkty = (int)reader["Punkty"],
+                          Miejscowosc = reader["Miejscowosc"].ToString(),
+                          Data = reader["Data"].ToString()
+                         };
                         list.Add(w);
                     }
-
+                    System.Console.WriteLine(4);
                     wynikiDataGridView.DataSource = list;
                 }
                 catch (Exception e) { MessageBox.Show("blad" + e.StackTrace); }} }

@@ -59,6 +59,8 @@
       <DependentUpon>ListaWynikowForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models2\Wynik.cs" />
+    <Compile Include="Models2\Wynik_F1.cs" />
+    <Compile Include="Models2\Wynik_F3.cs" />
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Models\tabela_Dystans.cs" />
     <Compile Include="Models\tabela_Edycja_Zawodow.cs" />
