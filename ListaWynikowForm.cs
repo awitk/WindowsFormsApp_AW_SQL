@@ -58,32 +58,6 @@ namespace WindowsFormsApp_AW_SQL
         {
 
         }
-
-
-
-        ////1. Przygotowanie połączenia do bazy danych
-        ////Tutaj jako parametr proszę podać connection string
-        //var con = new SqlConnection("");
-
-        ////2. Przygotowaniem zapytania
-        //var com = new SqlCommand();
-        //com.Connection = con;
-        //com.CommandText = "select * from Wyniki";
-
-        ////3. Uruchomienie zapytania
-        //var dr = com.ExecuteReader();
-
-        //var osoby = new List<Wynik>();
-        //while (dr.Read())
-        //{
-        //    var o = new Osoba();
-        //    o.IdOsoba = (int)dr["IdOsoba"];
-        //    o.Nazwisko = dr["Nazwisko"].ToString();
-        //    osoby.Add(o);
-        //}
-
-        ////...połączyć liste z danymi z samą tabelką
-
     }
     }
 
