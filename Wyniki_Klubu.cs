@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 using WindowsFormsApp_AW_SQL.Models2;
 
 namespace WindowsFormsApp_AW_SQL
@@ -59,7 +60,8 @@ namespace WindowsFormsApp_AW_SQL
                         list.Add(kl);
                     }
 
-                    wynikiDataGridView.DataSource = list;
+                    // wynikiDataGridView.DataSource = list;
+                    comboBox1_SelectedIndexChanged.DataSource = list;
                 }
                 catch (Exception f) { MessageBox.Show("blad" + f.StackTrace); }
             }
