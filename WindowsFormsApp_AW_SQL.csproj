@@ -66,7 +66,11 @@
     </Compile>
     <Compile Include="Models2\Wynik.cs" />
     <Compile Include="Models2\Wynik_F1.cs" />
+    <Compile Include="Models2\Wynik_F2.cs" />
     <Compile Include="Models2\Wynik_F3.cs" />
+    <Compile Include="Models2\Wynik_F4.cs" />
+    <Compile Include="Models2\Wynik_F5.cs" />
+    <Compile Include="Models2\Wynik_F6.cs" />
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Models\tabela_Dystans.cs" />
     <Compile Include="Models\tabela_Edycja_Zawodow.cs" />

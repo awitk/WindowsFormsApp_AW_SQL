@@ -3,15 +3,10 @@ namespace WindowsFormsApp_AW_SQL
 {
     partial class PrzykladowyFormularz
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+        
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -35,7 +30,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button3_zawodnik = new System.Windows.Forms.Button();
             this.button4_klub = new System.Windows.Forms.Button();
             this.button5_wyniki_1edycja = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button6_kategoria_edycja = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,20 +98,20 @@ namespace WindowsFormsApp_AW_SQL
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(397, 300);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(175, 45);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Zobacz wyniki wybranej kategorii w ramach jednej edycji zawodów";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6_kategoria_edycja.Location = new System.Drawing.Point(397, 300);
+            this.button6_kategoria_edycja.Margin = new System.Windows.Forms.Padding(2);
+            this.button6_kategoria_edycja.Name = "button6_kategoria_edycja";
+            this.button6_kategoria_edycja.Size = new System.Drawing.Size(175, 45);
+            this.button6_kategoria_edycja.TabIndex = 6;
+            this.button6_kategoria_edycja.Text = "Zobacz wyniki wybranej kategorii w ramach jednej edycji zawodów";
+            this.button6_kategoria_edycja.UseVisualStyleBackColor = true;
             // 
             // PrzykladowyFormularz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 505);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button6_kategoria_edycja);
             this.Controls.Add(this.button5_wyniki_1edycja);
             this.Controls.Add(this.button4_klub);
             this.Controls.Add(this.button3_zawodnik);
@@ -133,13 +128,15 @@ namespace WindowsFormsApp_AW_SQL
         }
 
         #endregion
+        private System.Windows.Forms.PictureBox pictureBox1;
 
         private System.Windows.Forms.Button button1_wszystkie_wyniki;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2_komentarz;
         private System.Windows.Forms.Button button3_zawodnik;
         private System.Windows.Forms.Button button4_klub;
         private System.Windows.Forms.Button button5_wyniki_1edycja;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button6_kategoria_edycja
+            
+            ;
     }
 }

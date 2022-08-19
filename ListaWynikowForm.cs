@@ -22,17 +22,15 @@ namespace WindowsFormsApp_AW_SQL
                     con.Open();
                     var cmd = new SqlCommand();
                     cmd.Connection = con;
-                cmd.CommandText = "select Imie, Nazwisko, Plec_nazwa, Kategoria_Nazwa, Klub_Nazwa, Srednia_predkosc, Czas, Punkty, Miejscowosc, e.Data FROM WYNIKI as w JOIN ZAWODNICY as z on w.ZAWODNIK_ID = z.ZAWODNIK_ID JOIN KATEGORIA as kat on w.kategoria_id = kat.kategoria_id JOIN EDYCJA_ZAWODOW as e on e.edycja_id = w.edycja_zawodow_id JOIN KLUB_KOLARSKI as klub on klub.klub_ID = z.Klub_Kolarski_Klub_id JOIN PLEC as p on p.id = Z.Plec_id order by Punkty DESC";
+                    cmd.CommandText = "select Imie, Nazwisko, Plec_nazwa, Kategoria_Nazwa, Klub_Nazwa, Srednia_predkosc, Czas, Punkty, Miejscowosc, e.Data FROM WYNIKI as w JOIN ZAWODNICY as z on w.ZAWODNIK_ID = z.ZAWODNIK_ID JOIN KATEGORIA as kat on w.kategoria_id = kat.kategoria_id JOIN EDYCJA_ZAWODOW as e on e.edycja_id = w.edycja_zawodow_id JOIN KLUB_KOLARSKI as klub on klub.klub_ID = z.Klub_Kolarski_Klub_id JOIN PLEC as p on p.id = Z.Plec_id order by Punkty DESC";
                     System.Console.WriteLine(1);
-                  // cmd.CommandText = "select * from WYNIKI";
                     var reader = cmd.ExecuteReader();
 
-                    System.Console.WriteLine(2);
+             
                     var list = new List<Wynik_F1>();
                     while (reader.Read())
                     {
                         System.Console.WriteLine(reader.ToString()); 
-                        System.Console.WriteLine(3);
                         var w = new Wynik_F1
                         
                         {
@@ -49,7 +47,9 @@ namespace WindowsFormsApp_AW_SQL
                          };
                         list.Add(w);
                     }
-                    System.Console.WriteLine(4);
+                  
+
+                    //// tutaj jest przypisanie do formularza?
                     wynikiDataGridView.DataSource = list;
                 }
                 catch (Exception e) { MessageBox.Show("blad" + e.StackTrace); }} }

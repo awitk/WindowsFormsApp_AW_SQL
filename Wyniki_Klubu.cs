@@ -41,31 +41,25 @@ namespace WindowsFormsApp_AW_SQL
                     con.Open();
                     var cmd = new SqlCommand();
                     cmd.Connection = con;
-                    cmd.CommandText = "select w.wynik_id,z.Imie, z.Nazwisko, w.Punkty, w.Czy_Nagroda, k.Kategoria_Nazwa from WYNIKI w join ZAWODNICY z on w.ZAWODNIK_ID = z.ZAWODNIK_ID join KATEGORIA k on w.Kategoria_ID = k.Kategoria_ID";
+                    cmd.CommandText = "select Klub_Nazwa from klub_kolarski;";
                     System.Console.WriteLine(1);
-                    //cmd.CommandText = "select * from WYNIKI";
+    
                     var reader = cmd.ExecuteReader();
 
                     System.Console.WriteLine(2);
-                    var list = new List<Wynik>();
+                    var list = new List<Wynik_F4>();
                     while (reader.Read())
                     {
                         System.Console.WriteLine(reader.ToString());
-                        System.Console.WriteLine(3);
-                        var w = new Wynik
+                 
+                        var kl = new Wynik_F4
 
-                        {
-
-                            Imie = reader["Imie"].ToString(),
-                            Nazwisko = reader["Nazwisko"].ToString(),
-                            Punkty = (int)reader["Punkty"],
-                            // CzyNagroda = (int)reader["Czy_Nagroda"], czas to null
-                            Kategoria = reader["Kategoria_Nazwa"].ToString()
+                        { Klub_Nazwa= reader["Klub_Nazwa"].ToString()
                         };
-                        list.Add(w);
+                        list.Add(kl);
                     }
 
-                    //wynikiDataGridView.DataSource = list;
+                    wynikiDataGridView.DataSource = list;
                 }
                 catch (Exception f) { MessageBox.Show("blad" + f.StackTrace); }
             }
