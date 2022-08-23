@@ -15,9 +15,14 @@ namespace WindowsFormsApp_AW_SQL
             InitializeComponent();
         }
 
-        private void button1_form2_Click(object sender, EventArgs e)
+        private void button_form2_usun_rekord_Click(object sender, EventArgs e)
         {
-            System.Console.WriteLine("button1_form2_Click");
+            System.Console.WriteLine("button_form2_usun_rekord");
+        }
+
+        private void button_form2_dodaj_rekord_Click(object sender, EventArgs e)
+        {
+            System.Console.WriteLine("button_form2_dodaj_rekord");
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)

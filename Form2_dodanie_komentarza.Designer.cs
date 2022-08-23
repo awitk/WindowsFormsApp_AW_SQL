@@ -11,14 +11,15 @@ namespace WindowsFormsApp_AW_SQL
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_form2_dodaj_rekord_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-
-
-
+        private void button_form2_usun_rekord_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
         #region Windows Form Designer generated code
 
         private void InitializeComponent()
@@ -35,8 +36,8 @@ namespace WindowsFormsApp_AW_SQL
             this.kOMENTARZBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mTB = new WindowsFormsApp_AW_SQL.MTB();
             this.kOMENTARZTableAdapter = new WindowsFormsApp_AW_SQL.MTBTableAdapters.KOMENTARZTableAdapter();
-            this.button1_form2 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_form2_usun_rekord = new System.Windows.Forms.Button();
+            this.button_form2_dodaj_rekord = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kOMENTARZBindingSource)).BeginInit();
@@ -117,32 +118,32 @@ namespace WindowsFormsApp_AW_SQL
             // 
             this.kOMENTARZTableAdapter.ClearBeforeFill = true;
             // 
-            // button1_form2
+            // button_form2_usun_rekord dawny button1_form2_Click
             // 
-            this.button1_form2.Location = new System.Drawing.Point(79, 113);
-            this.button1_form2.Name = "button1_form2";
-            this.button1_form2.Size = new System.Drawing.Size(111, 37);
-            this.button1_form2.TabIndex = 2;
-            this.button1_form2.Text = "Usuń Rekord";
-            this.button1_form2.UseVisualStyleBackColor = true;
-            this.button1_form2.Click += new System.EventHandler(this.button1_form2_Click);
+            this.button_form2_usun_rekord.Location = new System.Drawing.Point(79, 113);
+            this.button_form2_usun_rekord.Name = "button_form2_usun_rekord";
+            this.button_form2_usun_rekord.Size = new System.Drawing.Size(111, 37);
+            this.button_form2_usun_rekord.TabIndex = 2;
+            this.button_form2_usun_rekord.Text = "Usuń Rekord";
+            this.button_form2_usun_rekord.UseVisualStyleBackColor = true;
+            this.button_form2_usun_rekord.Click += new System.EventHandler(this.button_form2_usun_rekord_Click);
             // 
-            // button2
+            // button_form2_dodaj_rekord dawny button2
             // 
-            this.button2.Location = new System.Drawing.Point(237, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 37);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Dodaj Rekord";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_form2_dodaj_rekord.Location = new System.Drawing.Point(237, 113);
+            this.button_form2_dodaj_rekord.Name = "button_form2_dodaj_rekord";
+            this.button_form2_dodaj_rekord.Size = new System.Drawing.Size(111, 37);
+            this.button_form2_dodaj_rekord.TabIndex = 3;
+            this.button_form2_dodaj_rekord.Text = "Dodaj Rekord";
+            this.button_form2_dodaj_rekord.UseVisualStyleBackColor = true;
             // 
             // dodanie_komentarza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1_form2);
+            this.Controls.Add(this.button_form2_dodaj_rekord);
+            this.Controls.Add(this.button_form2_usun_rekord);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "dodanie_komentarza";
@@ -169,6 +170,6 @@ namespace WindowsFormsApp_AW_SQL
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDodaniaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn komentarztrescDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn komentarzautorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1_form2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_form2_usun_rekord;
+        private System.Windows.Forms.Button button_form2_dodaj_rekord;
     } }
