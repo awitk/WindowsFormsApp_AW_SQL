@@ -15,9 +15,16 @@ namespace WindowsFormsApp_AW_SQL
             InitializeComponent();
         }
 
-        private void button1_form2(object sender, EventArgs e)
+        private void button1_form2_Click(object sender, EventArgs e)
         {
-
+            System.Console.WriteLine("button1_form2_Click");
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        { System.Console.WriteLine("dataGridView2_CellContentClick"); }
+
+
+        private void Form2_dodanie_komentarza_Load(object sender, EventArgs e)
+        { System.Console.WriteLine("Form2_dodanie_komentarza_Load"); }
     }
 }

@@ -27,29 +27,43 @@ namespace WindowsFormsApp_AW_SQL
        
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_komentarz_Click(object sender, EventArgs e)
         {
             var oknoZWynikami = new Form2_dodanie_komentarza();
             oknoZWynikami.ShowDialog();
+        }
+
+
+        private void button3_zawodnik_Click(object sender, EventArgs e)
+        {
+            // miejsce na formularz nr 3
         }
 
         private void button4_klub_Click(object sender, EventArgs e)
         {
             var oknoZWynikami = new Wyniki_Klubu();
             oknoZWynikami.ShowDialog();
-
-
-       
         }
+        private void button5_wyniki_1edycja_Click(object sender, EventArgs e)
+        {
+            // miejsce na formularz nr 5
+        }
+
+        private void button6_kategoria_edycja_Click(object sender, EventArgs e)
+        {
+            // miejsce na formularz nr 6
+        }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
         private void PrzykladowyFormularz_Load(object sender, EventArgs e)
         {
             // kod z lista klubu
         }
+
+        
     }
 }

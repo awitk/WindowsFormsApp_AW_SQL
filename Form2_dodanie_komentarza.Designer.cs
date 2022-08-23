@@ -147,7 +147,7 @@ namespace WindowsFormsApp_AW_SQL
             this.Controls.Add(this.dataGridView1);
             this.Name = "dodanie_komentarza";
             this.Text = "Form2_dodanie_komentarza";
-            this.Load += new System.EventHandler(this.Form2_dodanie_komentarza);
+            this.Load += new System.EventHandler(this.Form2_dodanie_komentarza_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kOMENTARZBindingSource)).EndInit();

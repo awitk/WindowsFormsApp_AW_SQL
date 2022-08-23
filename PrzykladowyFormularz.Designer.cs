@@ -38,7 +38,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button1_wszystkie_wyniki.Name = "button1_wszystkie_wyniki";
             this.button1_wszystkie_wyniki.Size = new System.Drawing.Size(161, 25);
             this.button1_wszystkie_wyniki.TabIndex = 0;
-            this.button1_wszystkie_wyniki.Text = "Przeglądaj wszytskie wyniki";
+            this.button1_wszystkie_wyniki.Text = "Przeglądaj wszystkie wyniki";
             this.button1_wszystkie_wyniki.UseVisualStyleBackColor = true;
             this.button1_wszystkie_wyniki.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -60,7 +60,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button2_komentarz.TabIndex = 2;
             this.button2_komentarz.Text = "Zostaw komentarz do wyniku";
             this.button2_komentarz.UseVisualStyleBackColor = true;
-            this.button2_komentarz.Click += new System.EventHandler(this.button2_Click);
+            this.button2_komentarz.Click += new System.EventHandler(this.button2_komentarz_Click);
             // 
             // button3_zawodnik
             // 
@@ -71,6 +71,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button3_zawodnik.TabIndex = 3;
             this.button3_zawodnik.Text = "Zobacz wyniki zawodnika";
             this.button3_zawodnik.UseVisualStyleBackColor = true;
+            this.button3_zawodnik.Click += new System.EventHandler(this.button3_zawodnik_Click);
             // 
             // button4_klub
             // 
@@ -92,8 +93,9 @@ namespace WindowsFormsApp_AW_SQL
             this.button5_wyniki_1edycja.TabIndex = 5;
             this.button5_wyniki_1edycja.Text = "Zobacz wyniki z jednej edycji zawodów";
             this.button5_wyniki_1edycja.UseVisualStyleBackColor = true;
+            this.button5_wyniki_1edycja.Click += new System.EventHandler(this.button5_wyniki_1edycja_Click);
             // 
-            // button6
+            // button6_kategoria_edycja
             // 
             this.button6_kategoria_edycja.Location = new System.Drawing.Point(397, 300);
             this.button6_kategoria_edycja.Margin = new System.Windows.Forms.Padding(2);
@@ -102,6 +104,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button6_kategoria_edycja.TabIndex = 6;
             this.button6_kategoria_edycja.Text = "Zobacz wyniki wybranej kategorii w ramach jednej edycji zawodów";
             this.button6_kategoria_edycja.UseVisualStyleBackColor = true;
+            this.button6_kategoria_edycja.Click += new System.EventHandler(this.button6_kategoria_edycja_Click);
             // 
             // PrzykladowyFormularz
             // 
