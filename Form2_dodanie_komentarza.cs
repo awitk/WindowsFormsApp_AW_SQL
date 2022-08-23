@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_AW_SQL
 {
-    public partial class Form2_dodanie_komentarza : WindowsFormsApp_AW_SQL.PrzykladowyFormularz
+    public partial class Form2_dodanie_komentarza : Form
     {
         public Form2_dodanie_komentarza()
         {

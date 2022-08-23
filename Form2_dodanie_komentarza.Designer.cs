@@ -10,16 +10,6 @@ namespace WindowsFormsApp_AW_SQL
 
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        private void button_form2_dodaj_rekord_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void button_form2_usun_rekord_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
         #region Windows Form Designer generated code
 
         private void InitializeComponent()
