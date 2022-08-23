@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace WindowsFormsApp_AW_SQL
 {
     partial class Form2_dodanie_komentarza
@@ -10,7 +11,7 @@ namespace WindowsFormsApp_AW_SQL
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        private void button2_Click(object sender, Event Args e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -34,7 +35,7 @@ namespace WindowsFormsApp_AW_SQL
             this.kOMENTARZBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mTB = new WindowsFormsApp_AW_SQL.MTB();
             this.kOMENTARZTableAdapter = new WindowsFormsApp_AW_SQL.MTBTableAdapters.KOMENTARZTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1_form2 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -116,15 +117,15 @@ namespace WindowsFormsApp_AW_SQL
             // 
             this.kOMENTARZTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // button1_form2
             // 
-            this.button1.Location = new System.Drawing.Point(79, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Usuń Rekord";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1_form2.Location = new System.Drawing.Point(79, 113);
+            this.button1_form2.Name = "button1_form2";
+            this.button1_form2.Size = new System.Drawing.Size(111, 37);
+            this.button1_form2.TabIndex = 2;
+            this.button1_form2.Text = "Usuń Rekord";
+            this.button1_form2.UseVisualStyleBackColor = true;
+            this.button1_form2.Click += new System.EventHandler(this.button1_form2_Click);
             // 
             // button2
             // 
@@ -141,7 +142,7 @@ namespace WindowsFormsApp_AW_SQL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button1_form2);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "dodanie_komentarza";
@@ -168,6 +169,6 @@ namespace WindowsFormsApp_AW_SQL
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDodaniaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn komentarztrescDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn komentarzautorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button1_form2;
         private System.Windows.Forms.Button button2;
     } }

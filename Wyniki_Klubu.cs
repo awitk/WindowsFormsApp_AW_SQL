@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 using WindowsFormsApp_AW_SQL.Models2;
 
 namespace WindowsFormsApp_AW_SQL
@@ -26,7 +25,7 @@ namespace WindowsFormsApp_AW_SQL
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //// cos tu wstawic??
         }
 
         private void Wyniki_Klubu_Load(object sender, EventArgs e)
@@ -59,9 +58,9 @@ namespace WindowsFormsApp_AW_SQL
                         };
                         list.Add(kl);
                     }
-
+                    System.Console.WriteLine(list);
                     // wynikiDataGridView.DataSource = list;
-                    comboBox1_SelectedIndexChanged.DataSource = list;
+                  //  this.comboBox1_SelectedIndexChanged.DataSource = list;
                 }
                 catch (Exception f) { MessageBox.Show("blad" + f.StackTrace); }
             }

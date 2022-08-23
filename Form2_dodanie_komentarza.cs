@@ -14,5 +14,10 @@ namespace WindowsFormsApp_AW_SQL
         {
             InitializeComponent();
         }
+
+        private void button1_form2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

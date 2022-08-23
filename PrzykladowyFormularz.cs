@@ -29,18 +29,17 @@ namespace WindowsFormsApp_AW_SQL
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var oknoZWynikami = new Form2_dodanie_komentarza();
+            oknoZWynikami.ShowDialog();
         }
 
         private void button4_klub_Click(object sender, EventArgs e)
         {
-            var okno = new Wyniki_Klubu();
-            // stworzenie okno
+            var oknoZWynikami = new Wyniki_Klubu();
+            oknoZWynikami.ShowDialog();
 
-            okno.ShowDialog();
 
-            
-            //// MIEJSCE KODU 
+       
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
