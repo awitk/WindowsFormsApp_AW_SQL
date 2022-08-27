@@ -52,6 +52,24 @@
     <Compile Include="Form2_dodanie_komentarza.Designer.cs">
       <DependentUpon>Form2_dodanie_komentarza.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_wyniki_jednej_edycji+kategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_wyniki_jednej_edycji+kategoria.Designer.cs">
+      <DependentUpon>Form_wyniki_jednej_edycji+kategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_wyniki_jednej_edycji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_wyniki_jednej_edycji.Designer.cs">
+      <DependentUpon>Form_wyniki_jednej_edycji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_wyniki_zawodnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_wyniki_zawodnika.Designer.cs">
+      <DependentUpon>Form_wyniki_zawodnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaWynikowForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +111,9 @@
     <Compile Include="Wyniki_Klubu.Designer.cs">
       <DependentUpon>Wyniki_Klubu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_wyniki_jednej_edycji+kategoria.resx">
+      <DependentUpon>Form_wyniki_jednej_edycji+kategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListaWynikowForm.resx">
       <DependentUpon>ListaWynikowForm.cs</DependentUpon>
     </EmbeddedResource>
