@@ -22,7 +22,7 @@ namespace WindowsFormsApp_AW_SQL
                     con.Open();
                     var cmd = new SqlCommand();
                     cmd.Connection = con;
-                    cmd.CommandText = "select Imie, Nazwisko, Plec_nazwa, Kategoria_Nazwa, Klub_Nazwa, Srednia_predkosc, Czas, Punkty, Miejscowosc, e.Data FROM WYNIKI as w JOIN ZAWODNICY as z on w.ZAWODNIK_ID = z.ZAWODNIK_ID JOIN KATEGORIA as kat on w.kategoria_id = kat.kategoria_id JOIN EDYCJA_ZAWODOW as e on e.edycja_id = w.edycja_zawodow_id JOIN KLUB_KOLARSKI as klub on klub.klub_ID = z.Klub_Kolarski_Klub_id JOIN PLEC as p on p.id = Z.Plec_id order by Punkty DESC";
+                    cmd.CommandText = "select w.Wynik_id, Imie, Nazwisko, Plec_nazwa, Kategoria_Nazwa, Klub_Nazwa, Srednia_predkosc, Czas, Punkty, Miejscowosc, e.Data FROM WYNIKI as w JOIN ZAWODNICY as z on w.ZAWODNIK_ID = z.ZAWODNIK_ID JOIN KATEGORIA as kat on w.kategoria_id = kat.kategoria_id JOIN EDYCJA_ZAWODOW as e on e.edycja_id = w.edycja_zawodow_id JOIN KLUB_KOLARSKI as klub on klub.klub_ID = z.Klub_Kolarski_Klub_id JOIN PLEC as p on p.id = Z.Plec_id order by Punkty DESC";
                     System.Console.WriteLine(1);
                     var reader = cmd.ExecuteReader();
 
@@ -34,6 +34,7 @@ namespace WindowsFormsApp_AW_SQL
                         var w = new Wynik_F1
                         
                         {
+                          Wynik_id = (int)reader["w.Wynik_id"],
                           Imie = reader["Imie"].ToString(),
                           Nazwisko = reader["Nazwisko"].ToString(),
                           Plec = reader["Plec_nazwa"].ToString(),
@@ -49,7 +50,7 @@ namespace WindowsFormsApp_AW_SQL
                     }
                   
 
-                    //// tutaj jest przypisanie do formularza?
+                 
                     wynikiDataGridView.DataSource = list;
                 }
                 catch (Exception e) { MessageBox.Show("blad" + e.StackTrace); }} }
@@ -61,3 +62,4 @@ namespace WindowsFormsApp_AW_SQL
     }
     }
 
+/// O CO CHODZI Z TYM ŻE NIE WYŚWIETLA SIĘ WYNIK ID???

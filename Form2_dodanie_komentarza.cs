@@ -63,5 +63,11 @@ namespace WindowsFormsApp_AW_SQL
 
         private void Form2_dodanie_komentarza_Load(object sender, EventArgs e)
         { System.Console.WriteLine("Form2_dodanie_komentarza_Load"); }
+
+        private void button_form2_dodaj_rekord_Click_1(object sender, EventArgs e)
+        {
+            var okno = new Form_dodaj_rekord_komentarz();
+            okno.ShowDialog();
+        }
     }
 }

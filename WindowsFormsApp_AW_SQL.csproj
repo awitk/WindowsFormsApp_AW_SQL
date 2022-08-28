@@ -52,6 +52,12 @@
     <Compile Include="Form2_dodanie_komentarza.Designer.cs">
       <DependentUpon>Form2_dodanie_komentarza.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_dodaj_rekord_komentarz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dodaj_rekord_komentarz.Designer.cs">
+      <DependentUpon>Form_dodaj_rekord_komentarz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_wyniki_jednej_edycji+kategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     <Compile Include="Wyniki_Klubu.Designer.cs">
       <DependentUpon>Wyniki_Klubu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form2_dodanie_komentarza.resx">
+      <DependentUpon>Form2_dodanie_komentarza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dodaj_rekord_komentarz.resx">
+      <DependentUpon>Form_dodaj_rekord_komentarz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_wyniki_jednej_edycji+kategoria.resx">
       <DependentUpon>Form_wyniki_jednej_edycji+kategoria.cs</DependentUpon>
     </EmbeddedResource>

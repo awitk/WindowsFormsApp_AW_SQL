@@ -8,8 +8,8 @@ namespace WindowsFormsApp_AW_SQL.Models2
 {
     class Wynik_F1
     {
-     
 
+        public int Wynik_id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
         public string Plec { get; set; }

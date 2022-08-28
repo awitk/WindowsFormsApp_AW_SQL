@@ -27,9 +27,9 @@ namespace WindowsFormsApp_AW_SQL
        
         }
 
-        private void button2_komentarz_Click(object sender, EventArgs e)
+        private void button2_dodaj_komentarz_do_wyniku_Click(object sender, EventArgs e)
         {
-            var oknoZWynikami = new Form2_dodanie_komentarza();
+            var oknoZWynikami = new Form_dodaj_rekord_komentarz();
             oknoZWynikami.ShowDialog();
         }
 
@@ -63,7 +63,5 @@ namespace WindowsFormsApp_AW_SQL
         {
             // kod z lista klubu
         }
-
-        
     }
 }

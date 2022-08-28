@@ -108,7 +108,7 @@ namespace WindowsFormsApp_AW_SQL
             // 
             this.kOMENTARZTableAdapter.ClearBeforeFill = true;
             // 
-            // button_form2_usun_rekord dawny button1_form2_Click
+            // button_form2_usun_rekord
             // 
             this.button_form2_usun_rekord.Location = new System.Drawing.Point(79, 113);
             this.button_form2_usun_rekord.Name = "button_form2_usun_rekord";
@@ -118,7 +118,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button_form2_usun_rekord.UseVisualStyleBackColor = true;
             this.button_form2_usun_rekord.Click += new System.EventHandler(this.button_form2_usun_rekord_Click);
             // 
-            // button_form2_dodaj_rekord dawny button2
+            // button_form2_dodaj_rekord
             // 
             this.button_form2_dodaj_rekord.Location = new System.Drawing.Point(237, 113);
             this.button_form2_dodaj_rekord.Name = "button_form2_dodaj_rekord";
@@ -126,8 +126,9 @@ namespace WindowsFormsApp_AW_SQL
             this.button_form2_dodaj_rekord.TabIndex = 3;
             this.button_form2_dodaj_rekord.Text = "Dodaj Rekord";
             this.button_form2_dodaj_rekord.UseVisualStyleBackColor = true;
+            this.button_form2_dodaj_rekord.Click += new System.EventHandler(this.Button_form2_dodaj_rekord_Click_1);
             // 
-            // dodanie_komentarza
+            // Form2_dodanie_komentarza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,7 +137,7 @@ namespace WindowsFormsApp_AW_SQL
             this.Controls.Add(this.button_form2_usun_rekord);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "dodanie_komentarza";
+            this.Name = "Form2_dodanie_komentarza";
             this.Text = "Form2_dodanie_komentarza";
             this.Load += new System.EventHandler(this.Form2_dodanie_komentarza_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
