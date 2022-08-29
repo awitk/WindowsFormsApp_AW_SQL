@@ -15,7 +15,7 @@ namespace WindowsFormsApp_AW_SQL.Models2
         public string Czas { get; set; }
         public int Punkty { get; set; }
         public string Klub_Nazwa { get; set; }
-        public string Edycja { get; set; }
+        public int Edycja { get; set; }
         public string Miejscowosc { get; set; }
         public string Data { get; set; }
     }

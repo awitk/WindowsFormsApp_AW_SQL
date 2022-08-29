@@ -58,12 +58,6 @@
     <Compile Include="Form_dodaj_rekord_komentarz.Designer.cs">
       <DependentUpon>Form_dodaj_rekord_komentarz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_wyniki_jednej_edycji+kategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_wyniki_jednej_edycji+kategoria.Designer.cs">
-      <DependentUpon>Form_wyniki_jednej_edycji+kategoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_wyniki_jednej_edycji.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,20 +105,17 @@
     <Compile Include="PrzykladowyFormularz.Designer.cs">
       <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wyniki_Klubu.cs">
+    <Compile Include="Form_wyniki_klubu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Wyniki_Klubu.Designer.cs">
-      <DependentUpon>Wyniki_Klubu.cs</DependentUpon>
+    <Compile Include="Form_wyniki_klubu.Designer.cs">
+      <DependentUpon>Form_wyniki_klubu.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form2_dodanie_komentarza.resx">
       <DependentUpon>Form2_dodanie_komentarza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_dodaj_rekord_komentarz.resx">
       <DependentUpon>Form_dodaj_rekord_komentarz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_wyniki_jednej_edycji+kategoria.resx">
-      <DependentUpon>Form_wyniki_jednej_edycji+kategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaWynikowForm.resx">
       <DependentUpon>ListaWynikowForm.cs</DependentUpon>
@@ -142,8 +133,8 @@
     <EmbeddedResource Include="PrzykladowyFormularz.resx">
       <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Wyniki_Klubu.resx">
-      <DependentUpon>Wyniki_Klubu.cs</DependentUpon>
+    <EmbeddedResource Include="Form_wyniki_klubu.resx">
+      <DependentUpon>Form_wyniki_klubu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="MTB.xsc">
       <DependentUpon>MTB.xsd</DependentUpon>

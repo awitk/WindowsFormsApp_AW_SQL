@@ -49,7 +49,6 @@ namespace WindowsFormsApp_AW_SQL
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(107, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -64,7 +63,6 @@ namespace WindowsFormsApp_AW_SQL
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(107, 20);
             this.textBox3.TabIndex = 2;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -88,7 +86,7 @@ namespace WindowsFormsApp_AW_SQL
             this.label_data.Size = new System.Drawing.Size(215, 13);
             this.label_data.TabIndex = 5;
             this.label_data.Text = "wpisz datę dodania (w formacie 2022.08.01)";
-            this.label_data.Click += new System.EventHandler(this.label1_Click);
+            this.label_data.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -116,7 +114,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button_zatwierdz.TabIndex = 8;
             this.button_zatwierdz.Text = "ZATWERDŹ dodanie komentarza";
             this.button_zatwierdz.UseVisualStyleBackColor = true;
-            this.button_zatwierdz.Click += new System.EventHandler(this.button_OK_Click);
+            this.button_zatwierdz.Click += new System.EventHandler(this.Button_OK_Click);
             // 
             // label_id_komentarza
             // 
@@ -126,7 +124,6 @@ namespace WindowsFormsApp_AW_SQL
             this.label_id_komentarza.Size = new System.Drawing.Size(102, 13);
             this.label_id_komentarza.TabIndex = 10;
             this.label_id_komentarza.Text = "wpisz id komentarza";
-            this.label_id_komentarza.Click += new System.EventHandler(this.label_id_komentarza_Click);
             // 
             // label_id_wyniku
             // 

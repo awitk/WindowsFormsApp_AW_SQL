@@ -27,7 +27,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button2_przegladaj_komentarze = new System.Windows.Forms.Button();
             this.button3_zawodnik = new System.Windows.Forms.Button();
             this.button4_klub = new System.Windows.Forms.Button();
-            this.button5_wyniki_1edycja = new System.Windows.Forms.Button();
+            this.Button5_wyniki_1edycja = new System.Windows.Forms.Button();
             this.button6_kategoria_edycja = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2_dodaj_komentarz_do_wyniku = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button1_wszystkie_wyniki.TabIndex = 0;
             this.button1_wszystkie_wyniki.Text = "Przeglądaj wszystkie wyniki";
             this.button1_wszystkie_wyniki.UseVisualStyleBackColor = true;
-            this.button1_wszystkie_wyniki.Click += new System.EventHandler(this.button1_Click);
+            this.button1_wszystkie_wyniki.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2_przegladaj_komentarze
             // 
@@ -54,7 +54,6 @@ namespace WindowsFormsApp_AW_SQL
             this.button2_przegladaj_komentarze.TabIndex = 2;
             this.button2_przegladaj_komentarze.Text = "Przeglądaj wszystkie komentarze";
             this.button2_przegladaj_komentarze.UseVisualStyleBackColor = true;
-            this.button2_przegladaj_komentarze.Click += new System.EventHandler(this.button2_przegladaj_komentarze_Click);
 
             // button2_dodaj_komentarz_do_wyniku
             // 
@@ -65,7 +64,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button2_dodaj_komentarz_do_wyniku.TabIndex = 7;
             this.button2_dodaj_komentarz_do_wyniku.Text = "Dodaj komentarz do wyniku";
             this.button2_dodaj_komentarz_do_wyniku.UseVisualStyleBackColor = true;
-            this.button2_dodaj_komentarz_do_wyniku.Click += new System.EventHandler(this.button2_dodaj_komentarz_do_wyniku_Click);
+            this.button2_dodaj_komentarz_do_wyniku.Click += new System.EventHandler(this.Button2_dodaj_komentarz_do_wyniku_Click);
             // 
             // 
             // button3_zawodnik
@@ -77,29 +76,29 @@ namespace WindowsFormsApp_AW_SQL
             this.button3_zawodnik.TabIndex = 3;
             this.button3_zawodnik.Text = "Zobacz wyniki zawodnika";
             this.button3_zawodnik.UseVisualStyleBackColor = true;
-            this.button3_zawodnik.Click += new System.EventHandler(this.button3_zawodnik_Click);
+            this.button3_zawodnik.Click += new System.EventHandler(this.Button3_zawodnik_Click);
             // 
             // button4_klub
             // 
             this.button4_klub.Location = new System.Drawing.Point(211, 315);
             this.button4_klub.Margin = new System.Windows.Forms.Padding(2);
-            this.button4_klub.Name = "button4_klub";
+            this.button4_klub.Name = "Button4_klub";
             this.button4_klub.Size = new System.Drawing.Size(161, 37);
             this.button4_klub.TabIndex = 4;
             this.button4_klub.Text = "Zobacz wyniki klubu";
             this.button4_klub.UseVisualStyleBackColor = true;
-            this.button4_klub.Click += new System.EventHandler(this.button4_klub_Click);
+            this.button4_klub.Click += new System.EventHandler(this.Button4_klub_Click);
             // 
             // button5_wyniki_1edycja
             // 
-            this.button5_wyniki_1edycja.Location = new System.Drawing.Point(26, 370);
-            this.button5_wyniki_1edycja.Margin = new System.Windows.Forms.Padding(2);
-            this.button5_wyniki_1edycja.Name = "button5_wyniki_1edycja";
-            this.button5_wyniki_1edycja.Size = new System.Drawing.Size(161, 45);
-            this.button5_wyniki_1edycja.TabIndex = 5;
-            this.button5_wyniki_1edycja.Text = "Zobacz wyniki z jednej edycji zawodów";
-            this.button5_wyniki_1edycja.UseVisualStyleBackColor = true;
-            this.button5_wyniki_1edycja.Click += new System.EventHandler(this.button5_wyniki_1edycja_Click);
+            this.Button5_wyniki_1edycja.Location = new System.Drawing.Point(26, 370);
+            this.Button5_wyniki_1edycja.Margin = new System.Windows.Forms.Padding(2);
+            this.Button5_wyniki_1edycja.Name = "Button5_wyniki_1edycja";
+            this.Button5_wyniki_1edycja.Size = new System.Drawing.Size(161, 45);
+            this.Button5_wyniki_1edycja.TabIndex = 5;
+            this.Button5_wyniki_1edycja.Text = "Zobacz wyniki z jednej edycji zawodów";
+            this.Button5_wyniki_1edycja.UseVisualStyleBackColor = true;
+            this.Button5_wyniki_1edycja.Click += new System.EventHandler(this.Button5_wyniki_1edycja_Click);
             // 
             // button6_kategoria_edycja
             // 
@@ -110,7 +109,7 @@ namespace WindowsFormsApp_AW_SQL
             this.button6_kategoria_edycja.TabIndex = 6;
             this.button6_kategoria_edycja.Text = "Zobacz wyniki wybranej kategorii w ramach jednej edycji zawodów";
             this.button6_kategoria_edycja.UseVisualStyleBackColor = true;
-            this.button6_kategoria_edycja.Click += new System.EventHandler(this.button6_kategoria_edycja_Click);
+            this.button6_kategoria_edycja.Click += new System.EventHandler(this.Button6_kategoria_edycja_Click);
             // 
             // pictureBox1
             // 
@@ -132,7 +131,7 @@ namespace WindowsFormsApp_AW_SQL
             this.Controls.Add(this.button2_dodaj_komentarz_do_wyniku);
             this.Controls.Add(this.button3_zawodnik); 
             this.Controls.Add(this.button4_klub);
-            this.Controls.Add(this.button5_wyniki_1edycja);
+            this.Controls.Add(this.Button5_wyniki_1edycja);
             this.Controls.Add(this.button6_kategoria_edycja);
 
             this.Controls.Add(this.pictureBox1);
@@ -146,11 +145,6 @@ namespace WindowsFormsApp_AW_SQL
 
         }
 
-        private void button2_przegladaj_komentarze_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
 
@@ -159,10 +153,8 @@ namespace WindowsFormsApp_AW_SQL
         private System.Windows.Forms.Button button2_dodaj_komentarz_do_wyniku;
         private System.Windows.Forms.Button button3_zawodnik;
         private System.Windows.Forms.Button button4_klub;
-        private System.Windows.Forms.Button button5_wyniki_1edycja;
-        private System.Windows.Forms.Button button6_kategoria_edycja
-            
-            ;
+        private System.Windows.Forms.Button Button5_wyniki_1edycja;
+        private System.Windows.Forms.Button button6_kategoria_edycja;
         
     }
 }

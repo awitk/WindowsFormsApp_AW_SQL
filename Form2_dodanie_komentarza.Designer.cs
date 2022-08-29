@@ -121,12 +121,12 @@ namespace WindowsFormsApp_AW_SQL
             // button_form2_dodaj_rekord
             // 
             this.button_form2_dodaj_rekord.Location = new System.Drawing.Point(237, 113);
-            this.button_form2_dodaj_rekord.Name = "button_form2_dodaj_rekord";
+            this.button_form2_dodaj_rekord.Name = "Button_form2_dodaj_rekord";
             this.button_form2_dodaj_rekord.Size = new System.Drawing.Size(111, 37);
             this.button_form2_dodaj_rekord.TabIndex = 3;
             this.button_form2_dodaj_rekord.Text = "Dodaj Rekord";
             this.button_form2_dodaj_rekord.UseVisualStyleBackColor = true;
-            this.button_form2_dodaj_rekord.Click += new System.EventHandler(this.Button_form2_dodaj_rekord_Click_1);
+            this.button_form2_dodaj_rekord.Click += new System.EventHandler(this.Button_form2_dodaj_rekord_Click);
             // 
             // Form2_dodanie_komentarza
             // 
@@ -146,6 +146,11 @@ namespace WindowsFormsApp_AW_SQL
             ((System.ComponentModel.ISupportInitialize)(this.mTB)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void Button_form2_dodaj_rekord_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

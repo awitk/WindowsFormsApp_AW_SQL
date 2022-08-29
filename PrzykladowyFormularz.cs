@@ -19,49 +19,55 @@ namespace WindowsFormsApp_AW_SQL
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             var oknoZWynikami = new ListaWynikowForm();
             oknoZWynikami.ShowDialog();
-
-       
         }
 
-        private void button2_dodaj_komentarz_do_wyniku_Click(object sender, EventArgs e)
+        private void Button2_dodaj_komentarz_do_wyniku_Click(object sender, EventArgs e)
         {
             var oknoZWynikami = new Form_dodaj_rekord_komentarz();
             oknoZWynikami.ShowDialog();
         }
 
-
-        private void button3_zawodnik_Click(object sender, EventArgs e)
+        private void Button2_przegladaj_komentarze_Click(object sender, EventArgs e)
         {
-            // miejsce na formularz nr 3
-        }
-
-        private void button4_klub_Click(object sender, EventArgs e)
-        {
-            var oknoZWynikami = new Wyniki_Klubu();
+            var oknoZWynikami = new Form2_dodanie_komentarza();
             oknoZWynikami.ShowDialog();
         }
-        private void button5_wyniki_1edycja_Click(object sender, EventArgs e)
+
+        private void Button3_zawodnik_Click(object sender, EventArgs e)
         {
-            // miejsce na formularz nr 5
+            var oknoZWynikami = new Form_wyniki_zawodnika();
+            oknoZWynikami.ShowDialog();
         }
 
-        private void button6_kategoria_edycja_Click(object sender, EventArgs e)
+        private void Button4_klub_Click(object sender, EventArgs e)
         {
-            // miejsce na formularz nr 6
+            var oknoZWynikami = new Form_wyniki_klubu();
+            oknoZWynikami.ShowDialog();
+        }
+        private void Button5_wyniki_1edycja_Click(object sender, EventArgs e)
+        {
+            var oknoZWynikami = new Form_wyniki_jednej_edycji();
+            oknoZWynikami.ShowDialog();
+        }
+
+        private void Button6_kategoria_edycja_Click(object sender, EventArgs e)
+        {
+             //var oknoZWynikami = new Form_wyniki_jednej_edycji_kategoria();
+            //oknoZWynikami.ShowDialog();
         }
 
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
         private void PrzykladowyFormularz_Load(object sender, EventArgs e)
         {
-            // kod z lista klubu
+           
         }
     }
 }

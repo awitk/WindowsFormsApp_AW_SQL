@@ -16,12 +16,12 @@ namespace WindowsFormsApp_AW_SQL
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_OK_Click(object sender, EventArgs e)
+        private void Button_OK_Click(object sender, EventArgs e)
         {
 
             string wstaw_komentarz_id = textBox1.Text;
@@ -42,10 +42,10 @@ namespace WindowsFormsApp_AW_SQL
                     con.Open();
                     var cmd = new SqlCommand();
                     cmd.Connection = con; 
-                    cmd.CommandText = $"INSERT INTO KOMENTARZ (KOMENTARZ_ID, WYNIK_ID, Data_Dodania, Komentarz_tresc, Komentarz_autor) VALUES('{wstaw_komentarz},{wstaw_wynik_id},{wstaw_date},{wstaw_komentarz_tresc},{wstaw_komentarz_autor}')";
+                    cmd.CommandText = $"INSERT INTO KOMENTARZ (KOMENTARZ_ID, WYNIK_ID, Data_Dodania, Komentarz_tresc, Komentarz_autor) VALUES('{wstaw_komentarz_id}','{wstaw_wynik_id}','{wstaw_date}','{wstaw_komentarz_tresc}','{wstaw_komentarz_autor}')";
                     cmd.ExecuteNonQuery();
                     Close();
-
+                    /// wartości zmiennych muszą być w ' '
 
                 }
                 catch (Exception ab) { }
@@ -57,24 +57,6 @@ namespace WindowsFormsApp_AW_SQL
         private void button_ANULUJ_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-
-
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_id_komentarza_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
