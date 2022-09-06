@@ -58,6 +58,12 @@
     <Compile Include="Form_dodaj_rekord_komentarz.Designer.cs">
       <DependentUpon>Form_dodaj_rekord_komentarz.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_przegladaj_wszystkie_komentarze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_przegladaj_wszystkie_komentarze.Designer.cs">
+      <DependentUpon>Form_przegladaj_wszystkie_komentarze.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_wyniki_jednej_edycji.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,7 @@
     <Compile Include="Models2\Wynik_F4.cs" />
     <Compile Include="Models2\Wynik_F5.cs" />
     <Compile Include="Models2\Wynik_F6.cs" />
+    <Compile Include="Models2\Wynik_F7.cs" />
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Models\tabela_Dystans.cs" />
     <Compile Include="Models\tabela_Edycja_Zawodow.cs" />
@@ -116,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_dodaj_rekord_komentarz.resx">
       <DependentUpon>Form_dodaj_rekord_komentarz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_przegladaj_wszystkie_komentarze.resx">
+      <DependentUpon>Form_przegladaj_wszystkie_komentarze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaWynikowForm.resx">
       <DependentUpon>ListaWynikowForm.cs</DependentUpon>
