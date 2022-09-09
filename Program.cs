@@ -16,7 +16,7 @@ namespace WindowsFormsApp_AW_SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrzykladowyFormularz());
+           Application.Run(new PrzykladowyFormularz());
         }
     }
 }

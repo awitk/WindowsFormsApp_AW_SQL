@@ -214,7 +214,16 @@ SELECT KLUB_ID, Klub_Nazwa FROM KLUB_KOLARSKI WHERE (KLUB_ID = @KLUB_ID)</Comman
               <Mapping SourceColumn="KLUB_ID" DataSetColumn="KLUB_ID" />
               <Mapping SourceColumn="Klub_Nazwa" DataSetColumn="Klub_Nazwa" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="Baza_AW (Settings)" DbObjectName="master.dbo.KLUB_KOLARSKI" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KLUB_ID, Klub_Nazwa FROM dbo.KLUB_KOLARSKI</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KOMENTARZTableAdapter" GeneratorDataComponentClassName="KOMENTARZTableAdapter" Name="KOMENTARZ" UserDataComponentName="KOMENTARZTableAdapter">
             <MainSource>
@@ -489,14 +498,14 @@ SELECT ZAWODNIK_ID, NUMER_STARTOWY, Plec_id, Imie, Nazwisko, Klub_Kolarski_Klub_
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="MTB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="MTB" msprop:Generator_DataSetName="MTB">
+  <xs:element name="MTB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MTB" msprop:Generator_UserDSName="MTB">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DYSTANS" msprop:Generator_RowEvHandlerName="DYSTANSRowChangeEventHandler" msprop:Generator_RowDeletedName="DYSTANSRowDeleted" msprop:Generator_RowDeletingName="DYSTANSRowDeleting" msprop:Generator_RowEvArgName="DYSTANSRowChangeEvent" msprop:Generator_TablePropName="DYSTANS" msprop:Generator_RowChangedName="DYSTANSRowChanged" msprop:Generator_RowChangingName="DYSTANSRowChanging" msprop:Generator_TableClassName="DYSTANSDataTable" msprop:Generator_RowClassName="DYSTANSRow" msprop:Generator_TableVarName="tableDYSTANS" msprop:Generator_UserTableName="DYSTANS">
+        <xs:element name="DYSTANS" msprop:Generator_TableClassName="DYSTANSDataTable" msprop:Generator_RowEvArgName="DYSTANSRowChangeEvent" msprop:Generator_TableVarName="tableDYSTANS" msprop:Generator_TablePropName="DYSTANS" msprop:Generator_RowDeletingName="DYSTANSRowDeleting" msprop:Generator_RowChangingName="DYSTANSRowChanging" msprop:Generator_RowDeletedName="DYSTANSRowDeleted" msprop:Generator_RowEvHandlerName="DYSTANSRowChangeEventHandler" msprop:Generator_UserTableName="DYSTANS" msprop:Generator_RowChangedName="DYSTANSRowChanged" msprop:Generator_RowClassName="DYSTANSRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Dystans_ID" msprop:Generator_ColumnPropNameInRow="Dystans_ID" msprop:Generator_ColumnPropNameInTable="Dystans_IDColumn" msprop:Generator_ColumnVarNameInTable="columnDystans_ID" msprop:Generator_UserColumnName="Dystans_ID" type="xs:int" />
-              <xs:element name="Dystans_Nazwa" msprop:Generator_ColumnPropNameInRow="Dystans_Nazwa" msprop:Generator_ColumnPropNameInTable="Dystans_NazwaColumn" msprop:Generator_ColumnVarNameInTable="columnDystans_Nazwa" msprop:Generator_UserColumnName="Dystans_Nazwa">
+              <xs:element name="Dystans_ID" msprop:Generator_ColumnVarNameInTable="columnDystans_ID" msprop:Generator_ColumnPropNameInRow="Dystans_ID" msprop:Generator_ColumnPropNameInTable="Dystans_IDColumn" msprop:Generator_UserColumnName="Dystans_ID" type="xs:int" />
+              <xs:element name="Dystans_Nazwa" msprop:Generator_ColumnVarNameInTable="columnDystans_Nazwa" msprop:Generator_ColumnPropNameInRow="Dystans_Nazwa" msprop:Generator_ColumnPropNameInTable="Dystans_NazwaColumn" msprop:Generator_UserColumnName="Dystans_Nazwa">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -506,42 +515,42 @@ SELECT ZAWODNIK_ID, NUMER_STARTOWY, Plec_id, Imie, Nazwisko, Klub_Kolarski_Klub_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EDYCJA_ZAWODOW" msprop:Generator_RowEvHandlerName="EDYCJA_ZAWODOWRowChangeEventHandler" msprop:Generator_RowDeletedName="EDYCJA_ZAWODOWRowDeleted" msprop:Generator_RowDeletingName="EDYCJA_ZAWODOWRowDeleting" msprop:Generator_RowEvArgName="EDYCJA_ZAWODOWRowChangeEvent" msprop:Generator_TablePropName="EDYCJA_ZAWODOW" msprop:Generator_RowChangedName="EDYCJA_ZAWODOWRowChanged" msprop:Generator_RowChangingName="EDYCJA_ZAWODOWRowChanging" msprop:Generator_TableClassName="EDYCJA_ZAWODOWDataTable" msprop:Generator_RowClassName="EDYCJA_ZAWODOWRow" msprop:Generator_TableVarName="tableEDYCJA_ZAWODOW" msprop:Generator_UserTableName="EDYCJA_ZAWODOW">
+        <xs:element name="EDYCJA_ZAWODOW" msprop:Generator_TableClassName="EDYCJA_ZAWODOWDataTable" msprop:Generator_RowEvArgName="EDYCJA_ZAWODOWRowChangeEvent" msprop:Generator_TableVarName="tableEDYCJA_ZAWODOW" msprop:Generator_TablePropName="EDYCJA_ZAWODOW" msprop:Generator_RowDeletingName="EDYCJA_ZAWODOWRowDeleting" msprop:Generator_RowChangingName="EDYCJA_ZAWODOWRowChanging" msprop:Generator_RowDeletedName="EDYCJA_ZAWODOWRowDeleted" msprop:Generator_RowEvHandlerName="EDYCJA_ZAWODOWRowChangeEventHandler" msprop:Generator_UserTableName="EDYCJA_ZAWODOW" msprop:Generator_RowChangedName="EDYCJA_ZAWODOWRowChanged" msprop:Generator_RowClassName="EDYCJA_ZAWODOWRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="EDYCJA_ID" msprop:Generator_ColumnPropNameInRow="EDYCJA_ID" msprop:Generator_ColumnPropNameInTable="EDYCJA_IDColumn" msprop:Generator_ColumnVarNameInTable="columnEDYCJA_ID" msprop:Generator_UserColumnName="EDYCJA_ID" type="xs:int" />
-              <xs:element name="Miejscowosc" msprop:Generator_ColumnPropNameInRow="Miejscowosc" msprop:Generator_ColumnPropNameInTable="MiejscowoscColumn" msprop:Generator_ColumnVarNameInTable="columnMiejscowosc" msprop:Generator_UserColumnName="Miejscowosc">
+              <xs:element name="EDYCJA_ID" msprop:Generator_ColumnVarNameInTable="columnEDYCJA_ID" msprop:Generator_ColumnPropNameInRow="EDYCJA_ID" msprop:Generator_ColumnPropNameInTable="EDYCJA_IDColumn" msprop:Generator_UserColumnName="EDYCJA_ID" type="xs:int" />
+              <xs:element name="Miejscowosc" msprop:Generator_ColumnVarNameInTable="columnMiejscowosc" msprop:Generator_ColumnPropNameInRow="Miejscowosc" msprop:Generator_ColumnPropNameInTable="MiejscowoscColumn" msprop:Generator_UserColumnName="Miejscowosc">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Data" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_UserColumnName="Data" type="xs:dateTime" />
-              <xs:element name="Rok" msprop:Generator_ColumnPropNameInRow="Rok" msprop:Generator_ColumnPropNameInTable="RokColumn" msprop:Generator_ColumnVarNameInTable="columnRok" msprop:Generator_UserColumnName="Rok" type="xs:int" />
+              <xs:element name="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:dateTime" />
+              <xs:element name="Rok" msprop:Generator_ColumnVarNameInTable="columnRok" msprop:Generator_ColumnPropNameInRow="Rok" msprop:Generator_ColumnPropNameInTable="RokColumn" msprop:Generator_UserColumnName="Rok" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KATEGORIA" msprop:Generator_RowEvHandlerName="KATEGORIARowChangeEventHandler" msprop:Generator_RowDeletedName="KATEGORIARowDeleted" msprop:Generator_RowDeletingName="KATEGORIARowDeleting" msprop:Generator_RowEvArgName="KATEGORIARowChangeEvent" msprop:Generator_TablePropName="KATEGORIA" msprop:Generator_RowChangedName="KATEGORIARowChanged" msprop:Generator_RowChangingName="KATEGORIARowChanging" msprop:Generator_TableClassName="KATEGORIADataTable" msprop:Generator_RowClassName="KATEGORIARow" msprop:Generator_TableVarName="tableKATEGORIA" msprop:Generator_UserTableName="KATEGORIA">
+        <xs:element name="KATEGORIA" msprop:Generator_TableClassName="KATEGORIADataTable" msprop:Generator_RowEvArgName="KATEGORIARowChangeEvent" msprop:Generator_TableVarName="tableKATEGORIA" msprop:Generator_TablePropName="KATEGORIA" msprop:Generator_RowDeletingName="KATEGORIARowDeleting" msprop:Generator_RowChangingName="KATEGORIARowChanging" msprop:Generator_RowDeletedName="KATEGORIARowDeleted" msprop:Generator_RowEvHandlerName="KATEGORIARowChangeEventHandler" msprop:Generator_UserTableName="KATEGORIA" msprop:Generator_RowChangedName="KATEGORIARowChanged" msprop:Generator_RowClassName="KATEGORIARow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Kategoria_ID" msprop:Generator_ColumnPropNameInRow="Kategoria_ID" msprop:Generator_ColumnPropNameInTable="Kategoria_IDColumn" msprop:Generator_ColumnVarNameInTable="columnKategoria_ID" msprop:Generator_UserColumnName="Kategoria_ID" type="xs:int" />
-              <xs:element name="Kategoria_Nazwa" msprop:Generator_ColumnPropNameInRow="Kategoria_Nazwa" msprop:Generator_ColumnPropNameInTable="Kategoria_NazwaColumn" msprop:Generator_ColumnVarNameInTable="columnKategoria_Nazwa" msprop:Generator_UserColumnName="Kategoria_Nazwa">
+              <xs:element name="Kategoria_ID" msprop:Generator_ColumnVarNameInTable="columnKategoria_ID" msprop:Generator_ColumnPropNameInRow="Kategoria_ID" msprop:Generator_ColumnPropNameInTable="Kategoria_IDColumn" msprop:Generator_UserColumnName="Kategoria_ID" type="xs:int" />
+              <xs:element name="Kategoria_Nazwa" msprop:Generator_ColumnVarNameInTable="columnKategoria_Nazwa" msprop:Generator_ColumnPropNameInRow="Kategoria_Nazwa" msprop:Generator_ColumnPropNameInTable="Kategoria_NazwaColumn" msprop:Generator_UserColumnName="Kategoria_Nazwa">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PLEC_id" msprop:Generator_ColumnPropNameInRow="PLEC_id" msprop:Generator_ColumnPropNameInTable="PLEC_idColumn" msprop:Generator_ColumnVarNameInTable="columnPLEC_id" msprop:Generator_UserColumnName="PLEC_id" type="xs:int" minOccurs="0" />
+              <xs:element name="PLEC_id" msprop:Generator_ColumnVarNameInTable="columnPLEC_id" msprop:Generator_ColumnPropNameInRow="PLEC_id" msprop:Generator_ColumnPropNameInTable="PLEC_idColumn" msprop:Generator_UserColumnName="PLEC_id" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KLUB_KOLARSKI" msprop:Generator_RowEvHandlerName="KLUB_KOLARSKIRowChangeEventHandler" msprop:Generator_RowDeletedName="KLUB_KOLARSKIRowDeleted" msprop:Generator_RowDeletingName="KLUB_KOLARSKIRowDeleting" msprop:Generator_RowEvArgName="KLUB_KOLARSKIRowChangeEvent" msprop:Generator_TablePropName="KLUB_KOLARSKI" msprop:Generator_RowChangedName="KLUB_KOLARSKIRowChanged" msprop:Generator_RowChangingName="KLUB_KOLARSKIRowChanging" msprop:Generator_TableClassName="KLUB_KOLARSKIDataTable" msprop:Generator_RowClassName="KLUB_KOLARSKIRow" msprop:Generator_TableVarName="tableKLUB_KOLARSKI" msprop:Generator_UserTableName="KLUB_KOLARSKI">
+        <xs:element name="KLUB_KOLARSKI" msprop:Generator_TableClassName="KLUB_KOLARSKIDataTable" msprop:Generator_RowEvArgName="KLUB_KOLARSKIRowChangeEvent" msprop:Generator_TableVarName="tableKLUB_KOLARSKI" msprop:Generator_TablePropName="KLUB_KOLARSKI" msprop:Generator_RowDeletingName="KLUB_KOLARSKIRowDeleting" msprop:Generator_RowChangingName="KLUB_KOLARSKIRowChanging" msprop:Generator_RowDeletedName="KLUB_KOLARSKIRowDeleted" msprop:Generator_RowEvHandlerName="KLUB_KOLARSKIRowChangeEventHandler" msprop:Generator_UserTableName="KLUB_KOLARSKI" msprop:Generator_RowChangedName="KLUB_KOLARSKIRowChanged" msprop:Generator_RowClassName="KLUB_KOLARSKIRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="KLUB_ID" msprop:Generator_ColumnPropNameInRow="KLUB_ID" msprop:Generator_ColumnPropNameInTable="KLUB_IDColumn" msprop:Generator_ColumnVarNameInTable="columnKLUB_ID" msprop:Generator_UserColumnName="KLUB_ID" type="xs:int" />
-              <xs:element name="Klub_Nazwa" msprop:Generator_ColumnPropNameInRow="Klub_Nazwa" msprop:Generator_ColumnPropNameInTable="Klub_NazwaColumn" msprop:Generator_ColumnVarNameInTable="columnKlub_Nazwa" msprop:Generator_UserColumnName="Klub_Nazwa">
+              <xs:element name="KLUB_ID" msprop:Generator_ColumnVarNameInTable="columnKLUB_ID" msprop:Generator_ColumnPropNameInRow="KLUB_ID" msprop:Generator_ColumnPropNameInTable="KLUB_IDColumn" msprop:Generator_UserColumnName="KLUB_ID" type="xs:int" />
+              <xs:element name="Klub_Nazwa" msprop:Generator_ColumnVarNameInTable="columnKlub_Nazwa" msprop:Generator_ColumnPropNameInRow="Klub_Nazwa" msprop:Generator_ColumnPropNameInTable="Klub_NazwaColumn" msprop:Generator_UserColumnName="Klub_Nazwa">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -551,20 +560,20 @@ SELECT ZAWODNIK_ID, NUMER_STARTOWY, Plec_id, Imie, Nazwisko, Klub_Kolarski_Klub_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KOMENTARZ" msprop:Generator_RowEvHandlerName="KOMENTARZRowChangeEventHandler" msprop:Generator_RowDeletedName="KOMENTARZRowDeleted" msprop:Generator_RowDeletingName="KOMENTARZRowDeleting" msprop:Generator_RowEvArgName="KOMENTARZRowChangeEvent" msprop:Generator_TablePropName="KOMENTARZ" msprop:Generator_RowChangedName="KOMENTARZRowChanged" msprop:Generator_RowChangingName="KOMENTARZRowChanging" msprop:Generator_TableClassName="KOMENTARZDataTable" msprop:Generator_RowClassName="KOMENTARZRow" msprop:Generator_TableVarName="tableKOMENTARZ" msprop:Generator_UserTableName="KOMENTARZ">
+        <xs:element name="KOMENTARZ" msprop:Generator_TableClassName="KOMENTARZDataTable" msprop:Generator_RowEvArgName="KOMENTARZRowChangeEvent" msprop:Generator_TableVarName="tableKOMENTARZ" msprop:Generator_TablePropName="KOMENTARZ" msprop:Generator_RowDeletingName="KOMENTARZRowDeleting" msprop:Generator_RowChangingName="KOMENTARZRowChanging" msprop:Generator_RowDeletedName="KOMENTARZRowDeleted" msprop:Generator_RowEvHandlerName="KOMENTARZRowChangeEventHandler" msprop:Generator_UserTableName="KOMENTARZ" msprop:Generator_RowChangedName="KOMENTARZRowChanged" msprop:Generator_RowClassName="KOMENTARZRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="KOMENTARZ_ID" msprop:Generator_ColumnPropNameInRow="KOMENTARZ_ID" msprop:Generator_ColumnPropNameInTable="KOMENTARZ_IDColumn" msprop:Generator_ColumnVarNameInTable="columnKOMENTARZ_ID" msprop:Generator_UserColumnName="KOMENTARZ_ID" type="xs:int" />
-              <xs:element name="WYNIK_ID" msprop:Generator_ColumnPropNameInRow="WYNIK_ID" msprop:Generator_ColumnPropNameInTable="WYNIK_IDColumn" msprop:Generator_ColumnVarNameInTable="columnWYNIK_ID" msprop:Generator_UserColumnName="WYNIK_ID" type="xs:int" />
-              <xs:element name="Data_Dodania" msprop:Generator_ColumnPropNameInRow="Data_Dodania" msprop:Generator_ColumnPropNameInTable="Data_DodaniaColumn" msprop:Generator_ColumnVarNameInTable="columnData_Dodania" msprop:Generator_UserColumnName="Data_Dodania" type="xs:dateTime" />
-              <xs:element name="Komentarz_tresc" msprop:Generator_ColumnPropNameInRow="Komentarz_tresc" msprop:Generator_ColumnPropNameInTable="Komentarz_trescColumn" msprop:Generator_ColumnVarNameInTable="columnKomentarz_tresc" msprop:Generator_UserColumnName="Komentarz_tresc">
+              <xs:element name="KOMENTARZ_ID" msprop:Generator_ColumnVarNameInTable="columnKOMENTARZ_ID" msprop:Generator_ColumnPropNameInRow="KOMENTARZ_ID" msprop:Generator_ColumnPropNameInTable="KOMENTARZ_IDColumn" msprop:Generator_UserColumnName="KOMENTARZ_ID" type="xs:int" />
+              <xs:element name="WYNIK_ID" msprop:Generator_ColumnVarNameInTable="columnWYNIK_ID" msprop:Generator_ColumnPropNameInRow="WYNIK_ID" msprop:Generator_ColumnPropNameInTable="WYNIK_IDColumn" msprop:Generator_UserColumnName="WYNIK_ID" type="xs:int" />
+              <xs:element name="Data_Dodania" msprop:Generator_ColumnVarNameInTable="columnData_Dodania" msprop:Generator_ColumnPropNameInRow="Data_Dodania" msprop:Generator_ColumnPropNameInTable="Data_DodaniaColumn" msprop:Generator_UserColumnName="Data_Dodania" type="xs:dateTime" />
+              <xs:element name="Komentarz_tresc" msprop:Generator_ColumnVarNameInTable="columnKomentarz_tresc" msprop:Generator_ColumnPropNameInRow="Komentarz_tresc" msprop:Generator_ColumnPropNameInTable="Komentarz_trescColumn" msprop:Generator_UserColumnName="Komentarz_tresc">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Komentarz_autor" msprop:Generator_ColumnPropNameInRow="Komentarz_autor" msprop:Generator_ColumnPropNameInTable="Komentarz_autorColumn" msprop:Generator_ColumnVarNameInTable="columnKomentarz_autor" msprop:Generator_UserColumnName="Komentarz_autor" minOccurs="0">
+              <xs:element name="Komentarz_autor" msprop:Generator_ColumnVarNameInTable="columnKomentarz_autor" msprop:Generator_ColumnPropNameInRow="Komentarz_autor" msprop:Generator_ColumnPropNameInTable="Komentarz_autorColumn" msprop:Generator_UserColumnName="Komentarz_autor" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -574,11 +583,11 @@ SELECT ZAWODNIK_ID, NUMER_STARTOWY, Plec_id, Imie, Nazwisko, Klub_Kolarski_Klub_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PLEC" msprop:Generator_RowEvHandlerName="PLECRowChangeEventHandler" msprop:Generator_RowDeletedName="PLECRowDeleted" msprop:Generator_RowDeletingName="PLECRowDeleting" msprop:Generator_RowEvArgName="PLECRowChangeEvent" msprop:Generator_TablePropName="PLEC" msprop:Generator_RowChangedName="PLECRowChanged" msprop:Generator_RowChangingName="PLECRowChanging" msprop:Generator_TableClassName="PLECDataTable" msprop:Generator_RowClassName="PLECRow" msprop:Generator_TableVarName="tablePLEC" msprop:Generator_UserTableName="PLEC">
+        <xs:element name="PLEC" msprop:Generator_TableClassName="PLECDataTable" msprop:Generator_RowEvArgName="PLECRowChangeEvent" msprop:Generator_TableVarName="tablePLEC" msprop:Generator_TablePropName="PLEC" msprop:Generator_RowDeletingName="PLECRowDeleting" msprop:Generator_RowChangingName="PLECRowChanging" msprop:Generator_RowDeletedName="PLECRowDeleted" msprop:Generator_RowEvHandlerName="PLECRowChangeEventHandler" msprop:Generator_UserTableName="PLEC" msprop:Generator_RowChangedName="PLECRowChanged" msprop:Generator_RowClassName="PLECRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:int" />
-              <xs:element name="plec_nazwa" msprop:Generator_ColumnPropNameInRow="plec_nazwa" msprop:Generator_ColumnPropNameInTable="plec_nazwaColumn" msprop:Generator_ColumnVarNameInTable="columnplec_nazwa" msprop:Generator_UserColumnName="plec_nazwa">
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="plec_nazwa" msprop:Generator_ColumnVarNameInTable="columnplec_nazwa" msprop:Generator_ColumnPropNameInRow="plec_nazwa" msprop:Generator_ColumnPropNameInTable="plec_nazwaColumn" msprop:Generator_UserColumnName="plec_nazwa">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -588,48 +597,48 @@ SELECT ZAWODNIK_ID, NUMER_STARTOWY, Plec_id, Imie, Nazwisko, Klub_Kolarski_Klub_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="WYNIKI" msprop:Generator_RowEvHandlerName="WYNIKIRowChangeEventHandler" msprop:Generator_RowDeletedName="WYNIKIRowDeleted" msprop:Generator_RowDeletingName="WYNIKIRowDeleting" msprop:Generator_RowEvArgName="WYNIKIRowChangeEvent" msprop:Generator_TablePropName="WYNIKI" msprop:Generator_RowChangedName="WYNIKIRowChanged" msprop:Generator_RowChangingName="WYNIKIRowChanging" msprop:Generator_TableClassName="WYNIKIDataTable" msprop:Generator_RowClassName="WYNIKIRow" msprop:Generator_TableVarName="tableWYNIKI" msprop:Generator_UserTableName="WYNIKI">
+        <xs:element name="WYNIKI" msprop:Generator_TableClassName="WYNIKIDataTable" msprop:Generator_RowEvArgName="WYNIKIRowChangeEvent" msprop:Generator_TableVarName="tableWYNIKI" msprop:Generator_TablePropName="WYNIKI" msprop:Generator_RowDeletingName="WYNIKIRowDeleting" msprop:Generator_RowChangingName="WYNIKIRowChanging" msprop:Generator_RowDeletedName="WYNIKIRowDeleted" msprop:Generator_RowEvHandlerName="WYNIKIRowChangeEventHandler" msprop:Generator_UserTableName="WYNIKI" msprop:Generator_RowChangedName="WYNIKIRowChanged" msprop:Generator_RowClassName="WYNIKIRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="WYNIK_ID" msprop:Generator_ColumnPropNameInRow="WYNIK_ID" msprop:Generator_ColumnPropNameInTable="WYNIK_IDColumn" msprop:Generator_ColumnVarNameInTable="columnWYNIK_ID" msprop:Generator_UserColumnName="WYNIK_ID" type="xs:int" />
-              <xs:element name="ZAWODNIK_ID" msprop:Generator_ColumnPropNameInRow="ZAWODNIK_ID" msprop:Generator_ColumnPropNameInTable="ZAWODNIK_IDColumn" msprop:Generator_ColumnVarNameInTable="columnZAWODNIK_ID" msprop:Generator_UserColumnName="ZAWODNIK_ID" type="xs:int" />
-              <xs:element name="EDYCJA_ZAWODOW_ID" msprop:Generator_ColumnPropNameInRow="EDYCJA_ZAWODOW_ID" msprop:Generator_ColumnPropNameInTable="EDYCJA_ZAWODOW_IDColumn" msprop:Generator_ColumnVarNameInTable="columnEDYCJA_ZAWODOW_ID" msprop:Generator_UserColumnName="EDYCJA_ZAWODOW_ID" type="xs:int" />
-              <xs:element name="DYSTANS_Dystans_ID" msprop:Generator_ColumnPropNameInRow="DYSTANS_Dystans_ID" msprop:Generator_ColumnPropNameInTable="DYSTANS_Dystans_IDColumn" msprop:Generator_ColumnVarNameInTable="columnDYSTANS_Dystans_ID" msprop:Generator_UserColumnName="DYSTANS_Dystans_ID" type="xs:int" />
-              <xs:element name="Kategoria_ID" msprop:Generator_ColumnPropNameInRow="Kategoria_ID" msprop:Generator_ColumnPropNameInTable="Kategoria_IDColumn" msprop:Generator_ColumnVarNameInTable="columnKategoria_ID" msprop:Generator_UserColumnName="Kategoria_ID" type="xs:int" />
-              <xs:element name="Srednia_Predkosc" msprop:Generator_ColumnPropNameInRow="Srednia_Predkosc" msprop:Generator_ColumnPropNameInTable="Srednia_PredkoscColumn" msprop:Generator_ColumnVarNameInTable="columnSrednia_Predkosc" msprop:Generator_UserColumnName="Srednia_Predkosc" type="xs:int" />
-              <xs:element name="Czas" msprop:Generator_ColumnPropNameInRow="Czas" msprop:Generator_ColumnPropNameInTable="CzasColumn" msprop:Generator_ColumnVarNameInTable="columnCzas" msprop:Generator_UserColumnName="Czas">
+              <xs:element name="WYNIK_ID" msprop:Generator_ColumnVarNameInTable="columnWYNIK_ID" msprop:Generator_ColumnPropNameInRow="WYNIK_ID" msprop:Generator_ColumnPropNameInTable="WYNIK_IDColumn" msprop:Generator_UserColumnName="WYNIK_ID" type="xs:int" />
+              <xs:element name="ZAWODNIK_ID" msprop:Generator_ColumnVarNameInTable="columnZAWODNIK_ID" msprop:Generator_ColumnPropNameInRow="ZAWODNIK_ID" msprop:Generator_ColumnPropNameInTable="ZAWODNIK_IDColumn" msprop:Generator_UserColumnName="ZAWODNIK_ID" type="xs:int" />
+              <xs:element name="EDYCJA_ZAWODOW_ID" msprop:Generator_ColumnVarNameInTable="columnEDYCJA_ZAWODOW_ID" msprop:Generator_ColumnPropNameInRow="EDYCJA_ZAWODOW_ID" msprop:Generator_ColumnPropNameInTable="EDYCJA_ZAWODOW_IDColumn" msprop:Generator_UserColumnName="EDYCJA_ZAWODOW_ID" type="xs:int" />
+              <xs:element name="DYSTANS_Dystans_ID" msprop:Generator_ColumnVarNameInTable="columnDYSTANS_Dystans_ID" msprop:Generator_ColumnPropNameInRow="DYSTANS_Dystans_ID" msprop:Generator_ColumnPropNameInTable="DYSTANS_Dystans_IDColumn" msprop:Generator_UserColumnName="DYSTANS_Dystans_ID" type="xs:int" />
+              <xs:element name="Kategoria_ID" msprop:Generator_ColumnVarNameInTable="columnKategoria_ID" msprop:Generator_ColumnPropNameInRow="Kategoria_ID" msprop:Generator_ColumnPropNameInTable="Kategoria_IDColumn" msprop:Generator_UserColumnName="Kategoria_ID" type="xs:int" />
+              <xs:element name="Srednia_Predkosc" msprop:Generator_ColumnVarNameInTable="columnSrednia_Predkosc" msprop:Generator_ColumnPropNameInRow="Srednia_Predkosc" msprop:Generator_ColumnPropNameInTable="Srednia_PredkoscColumn" msprop:Generator_UserColumnName="Srednia_Predkosc" type="xs:int" />
+              <xs:element name="Czas" msprop:Generator_ColumnVarNameInTable="columnCzas" msprop:Generator_ColumnPropNameInRow="Czas" msprop:Generator_ColumnPropNameInTable="CzasColumn" msprop:Generator_UserColumnName="Czas">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Punkty" msprop:Generator_ColumnPropNameInRow="Punkty" msprop:Generator_ColumnPropNameInTable="PunktyColumn" msprop:Generator_ColumnVarNameInTable="columnPunkty" msprop:Generator_UserColumnName="Punkty" type="xs:int" />
-              <xs:element name="Czy_Nagroda" msprop:Generator_ColumnPropNameInRow="Czy_Nagroda" msprop:Generator_ColumnPropNameInTable="Czy_NagrodaColumn" msprop:Generator_ColumnVarNameInTable="columnCzy_Nagroda" msprop:Generator_UserColumnName="Czy_Nagroda" type="xs:int" minOccurs="0" />
+              <xs:element name="Punkty" msprop:Generator_ColumnVarNameInTable="columnPunkty" msprop:Generator_ColumnPropNameInRow="Punkty" msprop:Generator_ColumnPropNameInTable="PunktyColumn" msprop:Generator_UserColumnName="Punkty" type="xs:int" />
+              <xs:element name="Czy_Nagroda" msprop:Generator_ColumnVarNameInTable="columnCzy_Nagroda" msprop:Generator_ColumnPropNameInRow="Czy_Nagroda" msprop:Generator_ColumnPropNameInTable="Czy_NagrodaColumn" msprop:Generator_UserColumnName="Czy_Nagroda" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ZAWODNICY" msprop:Generator_RowEvHandlerName="ZAWODNICYRowChangeEventHandler" msprop:Generator_RowDeletedName="ZAWODNICYRowDeleted" msprop:Generator_RowDeletingName="ZAWODNICYRowDeleting" msprop:Generator_RowEvArgName="ZAWODNICYRowChangeEvent" msprop:Generator_TablePropName="ZAWODNICY" msprop:Generator_RowChangedName="ZAWODNICYRowChanged" msprop:Generator_RowChangingName="ZAWODNICYRowChanging" msprop:Generator_TableClassName="ZAWODNICYDataTable" msprop:Generator_RowClassName="ZAWODNICYRow" msprop:Generator_TableVarName="tableZAWODNICY" msprop:Generator_UserTableName="ZAWODNICY">
+        <xs:element name="ZAWODNICY" msprop:Generator_TableClassName="ZAWODNICYDataTable" msprop:Generator_RowEvArgName="ZAWODNICYRowChangeEvent" msprop:Generator_TableVarName="tableZAWODNICY" msprop:Generator_TablePropName="ZAWODNICY" msprop:Generator_RowDeletingName="ZAWODNICYRowDeleting" msprop:Generator_RowChangingName="ZAWODNICYRowChanging" msprop:Generator_RowDeletedName="ZAWODNICYRowDeleted" msprop:Generator_RowEvHandlerName="ZAWODNICYRowChangeEventHandler" msprop:Generator_UserTableName="ZAWODNICY" msprop:Generator_RowChangedName="ZAWODNICYRowChanged" msprop:Generator_RowClassName="ZAWODNICYRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ZAWODNIK_ID" msprop:Generator_ColumnPropNameInRow="ZAWODNIK_ID" msprop:Generator_ColumnPropNameInTable="ZAWODNIK_IDColumn" msprop:Generator_ColumnVarNameInTable="columnZAWODNIK_ID" msprop:Generator_UserColumnName="ZAWODNIK_ID" type="xs:int" />
-              <xs:element name="NUMER_STARTOWY" msprop:Generator_ColumnPropNameInRow="NUMER_STARTOWY" msprop:Generator_ColumnPropNameInTable="NUMER_STARTOWYColumn" msprop:Generator_ColumnVarNameInTable="columnNUMER_STARTOWY" msprop:Generator_UserColumnName="NUMER_STARTOWY" type="xs:int" />
-              <xs:element name="Plec_id" msprop:Generator_ColumnPropNameInRow="Plec_id" msprop:Generator_ColumnPropNameInTable="Plec_idColumn" msprop:Generator_ColumnVarNameInTable="columnPlec_id" msprop:Generator_UserColumnName="Plec_id" type="xs:int" />
-              <xs:element name="Imie" msprop:Generator_ColumnPropNameInRow="Imie" msprop:Generator_ColumnPropNameInTable="ImieColumn" msprop:Generator_ColumnVarNameInTable="columnImie" msprop:Generator_UserColumnName="Imie">
+              <xs:element name="ZAWODNIK_ID" msprop:Generator_ColumnVarNameInTable="columnZAWODNIK_ID" msprop:Generator_ColumnPropNameInRow="ZAWODNIK_ID" msprop:Generator_ColumnPropNameInTable="ZAWODNIK_IDColumn" msprop:Generator_UserColumnName="ZAWODNIK_ID" type="xs:int" />
+              <xs:element name="NUMER_STARTOWY" msprop:Generator_ColumnVarNameInTable="columnNUMER_STARTOWY" msprop:Generator_ColumnPropNameInRow="NUMER_STARTOWY" msprop:Generator_ColumnPropNameInTable="NUMER_STARTOWYColumn" msprop:Generator_UserColumnName="NUMER_STARTOWY" type="xs:int" />
+              <xs:element name="Plec_id" msprop:Generator_ColumnVarNameInTable="columnPlec_id" msprop:Generator_ColumnPropNameInRow="Plec_id" msprop:Generator_ColumnPropNameInTable="Plec_idColumn" msprop:Generator_UserColumnName="Plec_id" type="xs:int" />
+              <xs:element name="Imie" msprop:Generator_ColumnVarNameInTable="columnImie" msprop:Generator_ColumnPropNameInRow="Imie" msprop:Generator_ColumnPropNameInTable="ImieColumn" msprop:Generator_UserColumnName="Imie">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Nazwisko" msprop:Generator_ColumnPropNameInRow="Nazwisko" msprop:Generator_ColumnPropNameInTable="NazwiskoColumn" msprop:Generator_ColumnVarNameInTable="columnNazwisko" msprop:Generator_UserColumnName="Nazwisko">
+              <xs:element name="Nazwisko" msprop:Generator_ColumnVarNameInTable="columnNazwisko" msprop:Generator_ColumnPropNameInRow="Nazwisko" msprop:Generator_ColumnPropNameInTable="NazwiskoColumn" msprop:Generator_UserColumnName="Nazwisko">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Klub_Kolarski_Klub_id" msprop:Generator_ColumnPropNameInRow="Klub_Kolarski_Klub_id" msprop:Generator_ColumnPropNameInTable="Klub_Kolarski_Klub_idColumn" msprop:Generator_ColumnVarNameInTable="columnKlub_Kolarski_Klub_id" msprop:Generator_UserColumnName="Klub_Kolarski_Klub_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Klub_Kolarski_Klub_id" msprop:Generator_ColumnVarNameInTable="columnKlub_Kolarski_Klub_id" msprop:Generator_ColumnPropNameInRow="Klub_Kolarski_Klub_id" msprop:Generator_ColumnPropNameInTable="Klub_Kolarski_Klub_idColumn" msprop:Generator_UserColumnName="Klub_Kolarski_Klub_id" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -670,7 +679,7 @@ SELECT ZAWODNIK_ID, NUMER_STARTOWY, Plec_id, Imie, Nazwisko, Klub_Kolarski_Klub_
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="KOMENTARZ_WYNIKI_ZAWODOW" msdata:parent="WYNIKI" msdata:child="KOMENTARZ" msdata:parentkey="WYNIK_ID" msdata:childkey="WYNIK_ID" msprop:Generator_UserParentTable="WYNIKI" msprop:Generator_UserChildTable="KOMENTARZ" msprop:Generator_RelationVarName="relationKOMENTARZ_WYNIKI_ZAWODOW" msprop:Generator_UserRelationName="KOMENTARZ_WYNIKI_ZAWODOW" msprop:Generator_ChildPropName="GetKOMENTARZRows" msprop:Generator_ParentPropName="WYNIKIRow" />
+      <msdata:Relationship name="KOMENTARZ_WYNIKI_ZAWODOW" msdata:parent="WYNIKI" msdata:child="KOMENTARZ" msdata:parentkey="WYNIK_ID" msdata:childkey="WYNIK_ID" msprop:Generator_UserChildTable="KOMENTARZ" msprop:Generator_ChildPropName="GetKOMENTARZRows" msprop:Generator_UserRelationName="KOMENTARZ_WYNIKI_ZAWODOW" msprop:Generator_ParentPropName="WYNIKIRow" msprop:Generator_RelationVarName="relationKOMENTARZ_WYNIKI_ZAWODOW" msprop:Generator_UserParentTable="WYNIKI" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

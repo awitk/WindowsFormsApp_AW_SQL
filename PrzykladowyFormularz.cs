@@ -45,7 +45,7 @@ namespace WindowsFormsApp_AW_SQL
 
         private void Button4_klub_Click(object sender, EventArgs e)
         {
-            var oknoZWynikami = new Form_wyniki_klubu();
+            var oknoZWynikami = new Form_KK();
             oknoZWynikami.ShowDialog();
         }
         private void Button5_wyniki_1edycja_Click(object sender, EventArgs e)

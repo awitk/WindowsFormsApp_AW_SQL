@@ -82,10 +82,7 @@ namespace WindowsFormsApp_AW_SQL
 
         }
 
-        private void Form_wyniki_klubu_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+        private void Form_wyniki_klubu_Load(object sender, EventArgs e) => throw new NotImplementedException();
 
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
