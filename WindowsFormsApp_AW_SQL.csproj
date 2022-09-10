@@ -64,24 +64,6 @@
     <Compile Include="Form_KK.Designer.cs">
       <DependentUpon>Form_KK.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_przegladaj_wszystkie_komentarze.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_przegladaj_wszystkie_komentarze.Designer.cs">
-      <DependentUpon>Form_przegladaj_wszystkie_komentarze.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_wyniki_jednej_edycji.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_wyniki_jednej_edycji.Designer.cs">
-      <DependentUpon>Form_wyniki_jednej_edycji.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_wyniki_zawodnika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_wyniki_zawodnika.Designer.cs">
-      <DependentUpon>Form_wyniki_zawodnika.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListaWynikowForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,12 +100,6 @@
     <Compile Include="PrzykladowyFormularz.Designer.cs">
       <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_wyniki_klubu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_wyniki_klubu.Designer.cs">
-      <DependentUpon>Form_wyniki_klubu.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form2_dodanie_komentarza.resx">
       <DependentUpon>Form2_dodanie_komentarza.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,9 +108,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_KK.resx">
       <DependentUpon>Form_KK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_przegladaj_wszystkie_komentarze.resx">
-      <DependentUpon>Form_przegladaj_wszystkie_komentarze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaWynikowForm.resx">
       <DependentUpon>ListaWynikowForm.cs</DependentUpon>
@@ -151,9 +124,6 @@
     </Compile>
     <EmbeddedResource Include="PrzykladowyFormularz.resx">
       <DependentUpon>PrzykladowyFormularz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_wyniki_klubu.resx">
-      <DependentUpon>Form_wyniki_klubu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="MTB.xsc">
       <DependentUpon>MTB.xsd</DependentUpon>

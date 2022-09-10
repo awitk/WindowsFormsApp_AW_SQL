@@ -37,29 +37,11 @@ namespace WindowsFormsApp_AW_SQL
             oknoZWynikami.ShowDialog();
         }
 
-        private void Button3_zawodnik_Click(object sender, EventArgs e)
-        {
-            var oknoZWynikami = new Form_wyniki_zawodnika();
-            oknoZWynikami.ShowDialog();
-        }
-
         private void Button4_klub_Click(object sender, EventArgs e)
         {
             var oknoZWynikami = new Form_KK();
             oknoZWynikami.ShowDialog();
         }
-        private void Button5_wyniki_1edycja_Click(object sender, EventArgs e)
-        {
-            var oknoZWynikami = new Form_wyniki_jednej_edycji();
-            oknoZWynikami.ShowDialog();
-        }
-
-        private void Button6_kategoria_edycja_Click(object sender, EventArgs e)
-        {
-             //var oknoZWynikami = new Form_wyniki_jednej_edycji_kategoria();
-            //oknoZWynikami.ShowDialog();
-        }
-
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

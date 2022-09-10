@@ -62,4 +62,3 @@ namespace WindowsFormsApp_AW_SQL
     }
     }
 
-/// O CO CHODZI Z TYM ŻE NIE WYŚWIETLA SIĘ WYNIK ID???

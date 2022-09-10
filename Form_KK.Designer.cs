@@ -139,10 +139,7 @@ namespace WindowsFormsApp_AW_SQL
 
         }
 
-        private void Form_KK_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+      
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
         {
